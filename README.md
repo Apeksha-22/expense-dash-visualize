@@ -1,77 +1,117 @@
-<<<<<<< HEAD
-# expense-dash-visualize
-=======
-# Welcome to your Lovable project
+📊 Personal Finance Visualizer
+A modern, responsive dashboard to track your expenses, visualize spending categories, and manage monthly budgets — built with Next.js, Tailwind CSS, shadcn/ui, Recharts, and MongoDB.
 
-## Project info
+🚀 Features
+✅ Stage 1: Basic Transaction Tracking
+Add, edit, and delete transactions (amount, description, date)
 
-**URL**: https://lovable.dev/projects/f52874f4-15c8-4799-a99d-8c78dea144f6
+Recent transaction list
 
-## How can I edit this code?
+Monthly bar chart for expense trends
 
-There are several ways of editing your application.
+✅ Stage 2: Categories & Visualization
+Predefined categories (Food, Rent, Travel, etc.)
 
-**Use Lovable**
+Category-wise pie chart
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f52874f4-15c8-4799-a99d-8c78dea144f6) and start prompting.
+Summary cards (total expenses, income, most recent transactions)
 
-Changes made via Lovable will be committed automatically to this repo.
+✅ Stage 3: Budgeting
+Set monthly category budgets
 
-**Use your preferred IDE**
+Visual comparison: Budget vs Actual
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Simple financial insights
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+🛠️ Tech Stack
+Frontend: Next.js 14, React, Tailwind CSS (via shadcn/ui)
 
-Follow these steps:
+Charts: Recharts (BarChart, PieChart, etc.)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Backend: API Routes (Next.js), MongoDB (via Mongoose)
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Design System: shadcn/ui + Lucide Icons
 
-# Step 3: Install the necessary dependencies.
-npm i
+📷 Screenshots
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+![image](https://github.com/user-attachments/assets/b0577f89-1a17-4843-a7e8-44ac547315b7)
+
+📦 Installation
+<pre>
+git clone https://github.com/Apeksha-22/expense-dash-visualize.git
+cd expense-dash-visualize
+npm install
 npm run dev
-```
+Then open: http://localhost:3000
+</pre>
 
-**Edit a file directly in GitHub**
+🌐 Live Demo
+🔗 View Deployed Project
+https://expense-dash-visualize.vercel.app/
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+📁 Folder Structure
 
-**Use GitHub Codespaces**
+<pre>
+src/
+├── components/
+│   ├── BudgetManager.tsx
+│   ├── CategoryChart.tsx
+│   ├── ExpenseChart.tsx
+│   ├── QuickAdd.tsx
+│   ├── Sidebar.tsx
+│   ├── TransactionForm.tsx
+│   └── TransactionList.tsx
+│   └── ui/
+│       ├── accordion.tsx
+│       ├── alert-dialog.tsx
+│       ├── alert.tsx
+│       ├── aspect-ratio.tsx
+│       ├── avatar.tsx
+│       ├── badge.tsx
+│       ├── breadcrumb.tsx
+│       ├── button.tsx
+│       ├── calendar.tsx
+│       ├── card.tsx
+│       ├── carousel.tsx
+│       ├── chart.tsx
+│       ├── checkbox.tsx
+│       ├── collapsible.tsx
+│       ├── command.tsx
+│       ├── context-menu.tsx
+│       ├── dialog.tsx
+│       ├── drawer.tsx
+│       ├── dropdown-menu.tsx
+│       ├── form.tsx
+│       ├── hover-card.tsx
+│       ├── input-otp.tsx
+│       ├── input.tsx
+│       ├── label.tsx
+│       ├── menubar.tsx
+│       └── navigation-menu.tsx
+| 
+├── hooks/
+│   ├── use-mobile.tsx
+│   └── use-toast.ts
+├── lib/
+│   └── utils.ts
+├── pages/
+│   ├── Index.tsx
+│   └── NotFound.tsx
+├── types/
+│   └── transaction.ts
+├── App.css
+├── App.tsx
+├── index.css
+├── main.tsx
+└── vite-env.d.ts
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## What technologies are used for this project?
+</pre>
+🔒 Notes
+No authentication/login required (as per internship rules)
 
-This project is built with:
+Fully responsive on mobile & desktop
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+No external state management (Redux not used)
 
-## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/f52874f4-15c8-4799-a99d-8c78dea144f6) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
->>>>>>> c9f6779 (feat: implement UI components for Toaster, Toggle Group, Toggle, Tooltip, and Toast hooks)
